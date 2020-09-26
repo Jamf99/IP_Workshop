@@ -12,16 +12,12 @@
                 font-family: 'Nunito';
                 background-color: #e9ecef
             }
+            
         </style>
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Subject Management</a>
-            <div class="form-inblock my-2 my-lg-0">
-                <a class="btn btn-primary" href="/register" role="button"><i class="fas fa-user-plus"></i> Register</a>
-                <a class="btn btn-primary btn-light" href="/login" role="button"><i class="fas fa-door-open"></i> Login</a>
-            </div> 
-        </nav>
+        @include('partials.nav')
         @yield('content')
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

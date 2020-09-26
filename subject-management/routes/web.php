@@ -9,4 +9,6 @@ Route::get('register', function () {
 });
 Auth::routes();
 
+Route::resource('subjects', App\Http\Controllers\SubjectsController::class);
+
 
